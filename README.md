@@ -3,22 +3,30 @@ Welcome to the MERN Job Seeking Application! This web application is designed to
 Users can register as job seekers or employers, log in securely, and perform various CRUD (Create, Read, Update, Delete) operations related to job listings and applications.
 
 Features
-User Authentication: Users can sign up, log in, and securely authenticate using JSON Web Tokens (JWT).
-Authorization: Role-based access control ensures that only authorized users can perform specific actions. Job seekers and employers have distinct functionalities tailored to their needs.
-Job Listings: Employers can post job listings with detailed descriptions, including job title, location, requirements, and application instructions.
-Job Search: Job seekers can search for available job listings based on various criteria such as job title, location, and keywords.
-Application Management: Job seekers can apply for jobs by submitting their resumes and relevant details. They can also view, update, or delete their job applications.
-Resume Management: Job seekers can upload and update their resumes, making it easier for employers to review their qualifications.
-CRUD Operations: Users can create, read, update, and delete job listings and applications as per their requirements.
-Technologies Used
+->User Authentication: Users can sign up, log in, and securely authenticate using JSON Web Tokens (JWT).
+->Authorization: Role-based access control ensures that only authorized users can perform specific actions. 
+->Job seekers and employers have distinct functionalities tailored to their needs.
+->Job Listings: Employers can post job listings with detailed descriptions, including job title, location, requirements, and application instructions.
+->Job Search: Job seekers can search for available job listings based on various criteria such as job title, location, and keywords.
+->Application Management: Job seekers can apply for jobs by submitting their resumes and relevant details. They can also view, update, or delete their job applications.
+->Resume Management: Job seekers can upload and update their resumes, making it easier for employers to review their qualifications.
+->CRUD Operations: Users can create, read, update, and delete job listings and applications as per their requirements.
+
+ Technologies Used
 MongoDB: Database management system for storing user data, job listings, and applications.
+
 Express.js: Web application framework for building RESTful APIs to handle backend operations.
+
 React: Frontend library for building dynamic user interfaces.
+
 Node.js: JavaScript runtime environment for server-side scripting.
+
 JWT Authentication: Secure authentication mechanism using JSON Web Tokens.
+
 Bootstrap: Frontend framework for responsive design and styling.
-Getting Started
-Clone the Repository: git clone https://github.com/your-username/your-repository.git
+
+  Getting Started
+Clone the Repository: git clone (https://github.com/Prakash333singh/Jobzee/tree/main).git
 Install Dependencies:
 Navigate to the project directory: cd your-repository
 Install backend dependencies: npm install
