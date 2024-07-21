@@ -19,10 +19,12 @@ const Navbar = () => {
         }
       );
       toast.success(response.data.message);
+      console.log("Logout successful");
       setIsAuthorized(false);
       navigateTo("/login");
     } catch (error) {
-      toast.error(error.response.data.message), setIsAuthorized(true);
+      console.error("Logout error:", error.response ? error.response.data.message : error.message);
+      toast.error(error.response ? error.response.data.message : error.message);
     }
   };
 
@@ -50,7 +52,7 @@ const Navbar = () => {
                 : "MY APPLICATIONS"}
             </Link>
           </li>
-          {user && user.role === "Employer" ? (
+          {user && user.role === "Employer" && (
             <>
               <li>
                 <Link to={"/job/post"} onClick={() => setShow(false)}>
@@ -63,10 +65,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </>
-          ) : (
-            <></>
           )}
-
           <button onClick={handleLogout}>LOGOUT</button>
         </ul>
         <div className="hamburger">
